@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-23 22:45:42
-# @Last Modified time: 2022-07-23 23:13:05
+# @Last Modified time: 2022-07-23 23:26:33
 print('hello world')
 print('200+300=',200+300)
 name = input('please enter your name:')
@@ -19,19 +19,55 @@ else
 
 
  def sum1(n:int):
-    return ((n+1)*n)//2
+    return ((n+1)*n) // 2
 
 
 def sun_of_a_and_b(a:int,b:int):
-    return (a+b)
+    return (a + b)
 
 def command(a1:str,a2:str):
-    return (a1+a2)
-print(command('chi'+'na'))
+    return (a1 + a2)
+print(command('chi', 'na'))
 
 
 def text1(a1:int,a2:int,a3:int):
-    return(a1*a2+a3)
+    return (a1 *a2 + a3)
+
+
+
+
+
+
+
+
+
+
+def V(a:int,b:int,h:int):
+    return ((a+b)*h // 2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

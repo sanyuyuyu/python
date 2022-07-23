@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-07-23 22:38:33
+# @Last Modified time: 2022-07-23 23:25:10
 
 print('hello world')
 print('200+300=',200+300)
@@ -60,7 +60,7 @@ def text3(a1:int,a2:int,a3:int):
 
 
 def get_d(a, b):
-    return 100 * (a +b)
+    return 100 * (a + b)
 
 
 def test_git():
