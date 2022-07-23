@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-07-23 22:10:33
+# @Last Modified time: 2022-07-23 22:33:19
 
 print('hello world')
 print('200+300=',200+300)
@@ -63,21 +63,8 @@ def get_d(a, b):
     return 100 * (a +b)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def test_git():
+    ...
 
 
 
