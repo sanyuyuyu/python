@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-26 13:01:18
-# @Last Modified time: 2022-07-26 21:54:37
+# @Last Modified time: 2022-07-26 22:34:41
 
 
 i = 0
@@ -29,6 +29,9 @@ while i < 5:
 else:
     print('no')
 
+
+s = [1,2,3,4,5]
+s.insert(4,3)
 
 
 
@@ -109,7 +112,10 @@ elif 40 <= 90:
 else:
     print('what')
 
-
+for i in matrix:
+    for each in i:
+        print(each,end ='')
+        print()
 
 
 
