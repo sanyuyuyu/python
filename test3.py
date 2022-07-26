@@ -1,8 +1,8 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-24 13:14:35
-# @Last Modified time: 2022-07-24 21:44:20
-true and false
+# @Last Modified time: 2022-07-26 22:03:09
+
 
 
 age = 16
@@ -36,19 +36,18 @@ len('beauty')
 "chinese".encode('utf-8')
 
 
-print('%d2-%02' % (3,1))
 
 
 print('%.f2' % 3.1415926)
 
 
-'Age: %s. Gender: %s' % (18,true)
+
 
 
 'growth rate: %d %%' % 7
 
 
-zoo =  ['monkey', 'dog', snake')
+zoo = ['monkey', 'dog', 'snake']
 
 
 temp = input ('please guess a number')

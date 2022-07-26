@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-25 13:55:57
-# @Last Modified time: 2022-07-25 21:54:55
+# @Last Modified time: 2022-07-26 21:59:40
 
 
 
@@ -20,11 +20,10 @@ while counts > 0:
 
 
 
-random.randint(1,100000)
 
 
 i = 0
-while i < 1
+while i < 1:
     i = i + 1
     print(i)
 
@@ -35,29 +34,29 @@ divmod(3,2)
 
 i = 1
 sum =0
-while i < 100
+while i < 100:
     sum = sum + i
     i = i + 1
 print(sum)
 
 
 
-if 3 < 2:
-   print(true)
-print(false)
+if 3 > 2:
+   print('true')
+print('false')
 
 
 
 if 3 < 4:
-    print(false)
+    print('false')
 else:
-    print(true)
+    print('true')
 
 
 old = input("please tell me your old:")
 old = int(old)
 
-if 0 < old =18:
+if 0 < old <=18:
     print('teenager')
 elif 18 > old > 40:
     print('adult')
@@ -70,7 +69,6 @@ else:
 
 
 counts = 8
-while counts
 temp = input('please guess my heart number:')
 guess = int(temp)
 
@@ -115,10 +113,6 @@ else:
 
 
 
-old = 18
-rank = ('teenager' if 0 < old <18
-        'adult' if 18 < old < 40
-        'older' if 41 < old < 90 )
 
 while true:
     answer = input('please let me ddone')
