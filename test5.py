@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-26 13:01:18
-# @Last Modified time: 2022-07-26 22:34:41
+# @Last Modified time: 2022-07-27 15:36:39
 
 
 i = 0
@@ -44,15 +44,6 @@ while day <= 7:
 else:
     print('you are a good job')
 
-
-i = 1
-while i <= 9:
-    j = 1
-    while j <= i:
-        print(j, "*", i, "=", j * i, end=" ")
-        j += 1
-    print()
-    i += 1
 
 
 
