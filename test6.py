@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-27 14:12:44
-# @Last Modified time: 2022-07-27 22:43:46
+# @Last Modified time: 2022-07-29 15:26:31
 x = [1,2,3,4]
 y = x
 x[1] = 1
@@ -9,9 +9,7 @@ x = [[1,2,3],[4,5,6],[7,8,9
 
 
 
-x = 3
-if x <= 4:
-    print('it is a samall number')
+ 
   
 
 y = copy.copy(x)
