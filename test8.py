@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-29 14:56:06
-# @Last Modified time: 2022-07-29 19:53:12
+# @Last Modified time: 2022-07-29 20:06:14
 
 
 x = ("you are beautiful")
@@ -117,6 +117,10 @@ prec=3
 ty='g'
 f"{3.1415:{fill}{align}{width}.{prec}{ty}}"
 
+
+t = (1,2,3)
+t *=2
+(1,2,3,1,2,3)
 
 
 
