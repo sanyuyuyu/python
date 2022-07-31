@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-25 13:55:57
-# @Last Modified time: 2022-07-26 21:59:40
+# @Last Modified time: 2022-07-31 22:21:05
 
 
 
@@ -50,7 +50,7 @@ print('false')
 if 3 < 4:
     print('false')
 else:
-    print('true')
+    print('b')
 
 
 old = input("please tell me your old:")
