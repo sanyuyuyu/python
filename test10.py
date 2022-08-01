@@ -1,7 +1,8 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-31 15:01:28
-# @Last Modified time: 2022-07-31 22:36:50
+# @Last Modified time: 2022-08-01 19:08:30
+
 list(reversed(2,3,5,1,6))
 [6,1,5,3,2]
 

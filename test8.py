@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-29 14:56:06
-# @Last Modified time: 2022-07-29 20:06:14
+# @Last Modified time: 2022-08-01 19:15:17
 
 
 x = ("you are beautiful")
@@ -36,7 +36,7 @@ x.endswith('love')
 x.isalpha('python')
 
 
-import keyword
+importkeyword
 keyword.iskeyword('if')
 
 
