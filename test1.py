@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-08-01 22:28:17
+# @Last Modified time: 2022-08-02 21:24:26
 
 print('hello world')
 print('200+300=',200+300)
@@ -184,7 +184,20 @@ d = {x:y for x in [1,3,5] for y in [2,4,6]}
 
 
 
-
+ {'fish','tiger'}
+{s for s in 、'fish'}
+{'s','h','i','f'}
+set ('fish')
+{'s','h','i','f'}
+for each in s:
+    print(each)
+set ([1,1,3,4,5])
+{1,3,4,5 }
+s.union({1,2,3})
+s.intersection({1,2,3})
+s.difference({1,2,3})
+s.symmetric_difference("python")
+ 
 
 
 
