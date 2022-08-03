@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-08-03 17:00:16
+# @Last Modified time: 2022-08-03 20:48:28
 
 print('hello world')
 print('200+300=',200+300)
@@ -356,16 +356,186 @@ def funA():
     print("in funA, x =",x)
 funA()
 in funB,x = 880
-in funA,x = 880        
+in funA,x = 880
+
+def funA():
+    x = 880
+    def funB():
+        print(x)
+    funB()
+funny = funA()
+funny
+def power(exp):
+    def exp_of(base):
+        return base ** esp
+    return esp_of
+square = power(2)
+cube = power(3)
+ 
+
+def outer():
+    x = 0
+    y = 0
+    def inner(x1,y1):
+        nonlocal x, y
+        x += x1
+        y += y1
+        print(f"现在，x = {x1},y = {y1}")
+    return inner
+
+
+import time
+def time_master(func):
+    print("开始运行")
+    start = time.time()
+    func()
+    stop = time.time()
+    print(“结束运行”)
+    print(f"一共消耗了{(stop-start):.2f}秒。 ")
 
 
 
+def myfunc():
+    time.sleep(2)
+    print("hello")
+ time_master(myfunc )   
+myfunc = time_master(myfunc)
+
+@time_master  
+def myfunc():
+    time.sleep(2)
+    print("hello")
+myfunc
 
 
 
+def add(func):
+    def inner():
+        x = func()
+        return x + 1
+    return inner
+
+def cube(func):
+    def inner():
+        x = func()
+        return x * x * x
+    return inner
+
+def suqare(func):
+    def inner():
+        x = func()
+        return x * x
+    return inner
+
+@add
+@cube
+@square
+def test():
+    return 2
+print(test())
+
+
+import time
+def logger(msg):
+    def time_master(func):
+        def call_func():
+            start = time.time()
+            func()
+            stop = time.time()
+            print(f"[{msg}]一共耗费了 {(stop-start):.2f}")
+        return call_func
+    return time.master
+
+def funA():
+    time.sleep(1)
+    print("funA")
+
+def funB():
+    time.sleep(1)
+    print("funB")
+
+funA = logger(msg="A")(funA)
+funB = logger(msg="B")(funB)
 
 
 
+def squareX(3):
+    return x * x
+
+squareY = lambda y : y * y
+
+y = [lambda x : x * x, 2, 3]
+y[0](y[1])
+0
+y[0](y[2])
+
+mapped = map(lambda x : ord(x) + 10, 'fish')
+list(mapped)
+
+
+def boring(x):
+    return ord(x) + 10
+list(map(boring,'fish'))
+[80,115,125,114,77]
+list(filter(lambda x : x % 2, range(10)))
+[1,3,5,7,9]
+
+
+def counter():
+    i = 0
+    while i <= 5:
+        yield i
+        i += 1
+
+for i in counter():
+    print(i) 
+c = counter()
+
+def fib():
+    back1, back2 = 0, 1
+    while True:
+        yield back1
+        back1, back2 = back2, back1 + back2
+f = fib()
+
+(i ** 2 for i in range(10))
+for i in t:
+    print(i)
+
+def fun(i):
+    if i > 0:
+        print('AWCSU')
+        i -= 1
+        func(i)
+
+def factiter(n):
+    result = n
+    for i in range(1,n):
+        result *=1
+    return result
+
+def factrecur(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factrecur(n-1)
+
+def fibiter(n):
+    a = 1
+    b = 1
+    c = 1
+    while n > 2:
+        c = a + b
+        a = b 
+        b = c
+        n -= 1
+    return c 
+
+def fibrecur(n):
+    if n == 1 or n == 2:
+        return 1
+    else:
+        return fibrecur(n-1) + fibrecur(n-2)
 
 
 
