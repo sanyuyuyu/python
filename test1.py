@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-08-02 21:24:26
+# @Last Modified time: 2022-08-03 17:00:16
 
 print('hello world')
 print('200+300=',200+300)
@@ -198,6 +198,206 @@ s.intersection({1,2,3})
 s.difference({1,2,3})
 s.symmetric_difference("python")
  
+
+
+
+
+
+
+
+t = frozenset('fish')
+s = set('fish')
+s.update([1,1],'23')
+s.intersection_update('fish')
+s.remove('fish')
+s.discard('fish')
+s.pop('fish')
+
+
+hash(1)
+1
+hash(1.0)
+1
+hash(1.001)
+
+x = {1,2,3}
+y = {4,5}
+x = frozenset(x)
+y = {x, 4, 5}
+y
+{frozenset({1,2,3})4,5}
+
+
+def myfunc():
+    pass
+myfunc()
+
+def myfunc():
+    for in range(3):
+        print('i love python')
+ 
+ def myfunc(name):
+    for i in range(3):
+        print(f'i love {name}')
+
+myfunc("name" )
+myfunc("name",5)
+
+
+def div(x,y):
+    z = x / y
+    return z
+div(4,2)
+2.0
+
+def div(x,y):
+    return x / y
+
+def div(x,y):
+    if y == 0:
+        return("除数不能为零")
+    else:
+        return x / y
+
+def div(x,y):
+    if y == 0:
+        return("除数不能为零")
+    return x / y  
+
+
+def myfunc():
+    pass
+print(myfunc())
+none
+
+def myfunc(s,vt,o):
+    return"".join((o,vt,s))
+myfunc("dog","tiger","snake")
+'snake tiger dog'
+myfunc(o="dog",vt="tiger",s="snake")
+
+def myfunc(s,vt,o="dog"):
+    return"".join((s,vt,o))
+ 
+
+def abs(a,/,b,c):
+    print(a,b,c)
+
+
+def myfunc(*args):
+    print(“有{}个参数。”。formate(len(args)))
+    print("第二个参数是：{}".formate(args([1]))
+def myfunc(*args):
+    print(type(args))
+myfunc(1,2,3,a=4,b=5)
+def myfunc(**kwargs):
+    print("kwargs")
+myfunc(a=1,b=2,c=3)
+{'a':1,'b':2,'c':3}
+
+def myfunc(a,*b,**c):
+    print(a,b,c)
+myfunc(1,2,3,4,x=5,y=6)
+1 (2, 3, 4){'x':5,'y':6}
+help(str.format)
+
+
+args = (1, 2, 3, 4)
+def myfunc(a, b, c, d):
+    print(a,b,c,d)
+
+def myfunc():
+    x = 520
+    priint(x)
+x = 250
+def myfunc():
+    print(x)
+myfunc()
+520
+print(x)
+250
+x = 250
+def myfunc():
+    global x
+    x = 520
+    print(x)
+ myfunc()
+ 520
+ print(x)
+ 520    
+
+
+def funA():
+    x = 520
+    def funB():
+        x = 880
+        print("in funB, x =",x)
+    print("in funA, x =",x)
+
+def funA():
+    x = 520
+    def funB():
+        x = 880
+        print("in funB, x =",x)
+    funB()
+    print("in funA, x =",x)
+funA()
+in funB,x = 880
+in funA,x = 520
+  
+
+def funA():
+    x =520
+    def funB():
+        nonlocal x
+        x = 880
+        print("in funB, x =",x)
+    funB()
+    print("in funA, x =",x)
+funA()
+in funB,x = 880
+in funA,x = 880        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
