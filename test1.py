@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-08-03 20:48:28
+# @Last Modified time: 2022-08-04 20:08:28
 
 print('hello world')
 print('200+300=',200+300)
@@ -536,6 +536,312 @@ def fibrecur(n):
         return 1
     else:
         return fibrecur(n-1) + fibrecur(n-2)
+
+
+
+
+
+def hanoi(n, x, y, z):
+    if n == 1:
+        print(x, '-->', z) # 如果只有一层，直接将金片从x移动到z层
+    else:
+        hanoi(n-1, x, z, y) # 将x上n-1个金片移动到y
+        print(x, '-->', z)  # 将最低下的金片从x移动到z
+        hanoi(n-1, y, x, z) # 将y上的n-1个金片移动到z 
+n = int(input('请输入汉诺塔的层数：')）
+hanoi(n,'A','B','C')
+
+
+
+def times(s:str, n:int) -> str:
+    return s * n
+times('fish',3)
+
+def times(s:str = "fish", n:int = 3) -> str:
+    return s * n
+
+def times(s:list, n:int = 3) -> str:
+    return s * n
+
+def times(s:list[int],n:int = 3) -> list:
+    return s * n
+
+def times(s:dict[str, int], n:int = 3) -> list:
+    return list(s.keys()) * n
+
+times._name_
+times._annotation_
+
+
+def add(x, y):
+    return x + y
+import functools
+functools.reduce(add, [1,2,3,4,5])
+
+add(add(add(add(1, 2), 3), 4), 5)
+functools.reduce(lambda x,y:x*y, range(1:11))
+square = functools.partial(pow, exp=2）
+cube = functools.partial(pow, exp=3)
+
+
+import time
+import functools
+
+def time_master(func):
+    @functools.wraps(func)
+    def call_func():
+        print("开始运行程序...")
+        start = time.time()
+        func()
+        stop = time.time()
+        print("结程序运行...")
+        print(f"一共消耗了 {(stop -start):.2f}秒。")
+    return call_func
+def myfunc():
+    time.sleep(2)
+    print("i love eat fish.")
+
+
+
+f = open("fish.text","w")
+f.write('I love python.')
+f.writelines(["I love fish.\n","I love cat."])
+f.close()
+f = open("fishc.text","r+")
+f.readable()
+f.writable()
+for each in f:
+    print(each)
+f.read()
+f.tell()
+f.seek(0)
+f.readline()
+f.flush()
+f.truncate()
+
+
+
+
+
+from pathlib import path
+path.cwd()
+q = p / "Fishc.txt"
+
+p.is_dir()
+true
+q.is_dir()
+False 
+
+p.is_file()
+q.is_file() 
+
+p.exists()
+q.exists()
+path("C:/404").exists()
+p.name
+
+q.name
+"Fishc.txt"
+
+q.stem
+'Fishc'
+q.suffix
+'.txt'
+p.stat().st_size
+path("./dox")
+
+p.iterdir()
+for each in p.iterdir():
+    print(each)
+
+[x for x in p.iterdir() if x.is_file()]
+
+
+f = open("FishC.txt","w")
+f.write("I love fish.")
+f.close()
+
+with open("FishC.txt","w") as f:
+    f.write("I love fish.")
+
+
+import pickle
+x, y, z = 1, 2, 3
+s = 'fishc'
+l = ["tiger", 520, 3.114]
+d = {"one":1, "two":2}
+with open("data.pkl","wb")as f:
+    pickle.dump(x, f)
+    pickle.dump(y, f)
+    pickle.dump(z, f)
+    pickle.dump(s, f)
+    pickle.dump(l, f)
+    pickle.dump(d, f )
+
+
+import pickle
+with open("data.pkl", "rb")as f:
+    x = pickle.load(f)
+    y = pickle.load(f)
+    z = pickle.load(f)
+    s = pickle.load(f)
+    l = pickle.load(f)
+    d = pickle.load(f)
+print(x, y, z, s, l, d, sep"\n")
+
+
+import pickle
+with open("data.pkl","rb")as f:
+    x, y, z, s, l, d = pickle.load(f)
+print(x, y, z, s, l, d, sep"\n" )
+
+
+
+def exchange(dollar, rate=6.32):
+    """
+    功能：汇率转换，美元 -> 人民币
+    参数：
+    - dollar 美元数量
+    - rate 汇率，默认值是 6.32
+    返回值：
+    - 人命币的数量
+    “”“
+    retun dollar * rate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
