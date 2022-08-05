@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-08-04 20:08:28
+# @Last Modified time: 2022-08-05 20:51:36
 
 print('hello world')
 print('200+300=',200+300)
@@ -698,16 +698,18 @@ print(x, y, z, s, l, d, sep"\n" )
 
 
 def exchange(dollar, rate=6.32):
-    """
-    功能：汇率转换，美元 -> 人民币
-    参数：
-    - dollar 美元数量
-    - rate 汇率，默认值是 6.32
-    返回值：
-    - 人命币的数量
-    “”“
-    retun dollar * rate
+    
 
+try:
+    1 / 0
+    520 + "fishc"
+except ZeroDivisionError:
+    print("除数不能为零")
+except ValueError:
+    print("值不正确"）
+except TypeError:
+    print("类型不正确。")
+ 
 
 
 
@@ -724,68 +726,216 @@ def exchange(dollar, rate=6.32):
 
 
 
+t2.sleep()
+class C:
+    def hello():
+        print("你好")
 
+class C:
+    def get_self(self):
+        print(self)
 
+c = C()
+c.get_self()
 
+class A:
+    x = 520
+    def hello(self):
+        print("你好")
+class B(A):
+    pass
 
+b = B()
+b.x
+520
 
+class B(A):
+    x = 880 
+    def hello（self):
+    print(“你好”) 
 
+b = B()
+b.x
+b.hello()
+你好  
 
+isinstance(b, B)
+isinstance(b, A)
+issubclass(A, B)
+issubclass(B, A)
 
+class B:
+    x = 880
+    y = 250
+    def hello(self):
+        print("你好 ")
 
+class C(A,B):
+    pass
 
+c = C()
+c.x
 
+class Turtle:
+    def say(self):
+        print("不积硅步，无以至千里")
 
+class Cat:
+    def say(self):
+        print("喵")
 
+class Dog:
+    def say(self):
+        print("wolf wolf")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class Garden:
+    t = Turtle()
+    c = Cat()
+    d = Dog()
+    def say(self):
+        self.t.say()
+        self.c.say()
+        self.d.say()
+g = Garden()
+g.say()
+不积硅步，无以至千里
+喵
+wolf wolf
+
+
+class C:
+    def get_self(self):
+        print(self)
+
+c = C()
+c.get_self()
+d = C()
+d.x = 250
+
+
+c.__dict__
+{'x':520}
+
+d.__dict__
+{'x':250}
+d.y = 660
+d.__dict__
+{'x': 250, 'y': 660}
+class C:
+    def set_x(self,v):
+        self.x = v
+
+
+c = C()
+c.__dict__
+{}
+c.set_x(250)
+c.__dict__
+{'x':250}
+c.x
+250
+
+
+class C:
+    x = 100
+    def set_x(self,v):
+        x = v
+
+c = C()
+c.set_x(250)
+c.x
+100
+C.x
+100
+C.x = 250
+c.x
+c.__dict__
+{}
+
+class C:
+    pass
+
+C.x = 250
+C.y = "fish"
+C.z = [1, 2, 3]
+print(C.x)
+250
+
+d = {}
+d['x'] = 250
+d['y'] = "fish"
+d['z'] = [1, 2, 3]
+
+
+c = C()
+c.x = 250
+c.y = "fish"
+c.z = [1, 2, 3]
+
+
+class C:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def add(self):
+        return self.x + self.y
+    def mul(self):
+        return self.x *self.y
+
+c = C(2, 3)
+c.add()
+
+
+class D():
+    def __init__(self,x, y, z):
+        C.__init__(self, x, y)
+        self.z = z
+    def add(self):
+        return C.add(self) + self.z
+    def mul(self):
+        return C.mul(self) * self.z
+
+d.add()
+d.mul()
+
+
+class A:
+    def __init__(self):
+        print("A")
+
+class B1(A):
+    def __init__(self):
+        A.__init__(self)
+        print("B1")
+
+class B2(A):
+    def __init__(self):
+        A.__init__(self)
+        print("B2")
+
+class C(B1, B2):
+    def __init__(self):
+        B1.__init__(self)
+        B2.__init__(self)
+        print("c")
+   
+
+class B1(A):
+    def __init__(self):
+        super().__init__()
+        print("B1")
+
+class B2(A):
+    def __init__(self):
+        super().__init__()
+        print("B2")
+
+class C(B1, B2):
+    def __init__(self):
+       super().__init__()
+        print("c")
+
+C.mro
 
 
 
