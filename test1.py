@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-08-05 20:51:36
+# @Last Modified time: 2022-08-06 17:33:55
 
 print('hello world')
 print('200+300=',200+300)
@@ -936,6 +936,303 @@ class C(B1, B2):
         print("c")
 
 C.mro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Animal:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def say(self):
+        print(f"我叫{self.name}, 今年{self.age}岁。")
+
+class FlyMixin:
+    def fly(self):
+        print("fly fly")
+
+class Pig(Animal):
+    def special(self):
+        print("pig pig")
+p = Pig("ss",5)
+p.say()
+p.special()
+
+
+class Displayer:
+    def display(self, message):
+        print(message)
+
+class LoggerMixin:
+    def log(self, message, filename="logfile.txt"):
+        with open(filenmae, "a") as f:
+            f.write(message)
+
+    def display(self, message):
+        super().display(message)
+        self.log(message)
+
+class MySubClass(LoggerMixin, Displayer):
+    def log(self, message):
+        super().log(message, filename="subclasslog.txt")
+
+subclass = MySubClass()
+subclass.display("This is a test.")
+
+
+len(["fish", "dog"])
+len({"name":"dog", "age":18})
+
+class Shape:
+    def __init__(self, name):
+        self.name = name
+    def area(self):
+        pass
+
+class Square(Shape):
+    def __init__(self, length):
+        super().__init__("正方形")
+        self.length = length
+    def area(self):
+        return self.length * self.length
+
+class Circle(Shape):
+    def __init__(self, radius):
+        super().__init__("圆形")
+        self.radius = radius
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+class Triangle(Shape):
+    def __init__(self, base, height):
+        super().__init__("三角形")
+        self.base = base
+        self.height = height
+    def area(self):
+        return self.base * self.height / 2
+
+
+class B1(A):
+    def __init__(self):
+        A.__init__(self)
+        print("B1")
+
+class B2(A):
+    def __init__(self):
+        A.__init__(self)
+        print("B2")
+
+class C(B1, B2):
+    def __init__(self):
+        B1.__init__(self)
+        B2.__init__(self)
+        print("c")
+   
+class Cat:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def intro(self):
+        print(f"{self.name},{self.age}")
+    def say(self):
+        print("miao")
+
+
+   
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def intro(self):
+        print(f"{self.name},{self.age}")
+    def say(self):
+        print("wolf")
+
+
+def animal(x):
+    x.intro()
+    x.say()
+
+
+class Bicycle:
+    def intro(self):
+        print("")
+    def say(self):
+        print("")
+
+
+class C:
+    def __init__(self, x):
+        self.__x = x
+    def set_x(self, x):
+        self.__x = x
+    def get_x(self):
+        print(self.__x)
+c = C(250)
+c.__x
+c.get_x(520)
+c.get_x()
+c.__dict__ 
+{'_C__x': 520}
+
+class D:
+    def __func(self):
+        print("Hello ")
+d.__func()
+
+class C:
+    def __init__(self, x):
+        self.x = x
+c = C(250)
+c.x
+250
+c.__dict__
+{'x':250}
+
+class C:
+    __slots__ = ["x", "y"]
+    def __init__(self, x):
+        self.x = x
+c = C(250)
+c.x
+250
+c.y = 520
+
+
+class D:
+    __slots__ = ["x", "y"]
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+class E:
+    pass
+e = E(250)
+e.x
+e.__slots__
+
+
+class CapStr(str):
+    def __new__(cls, string):
+        string = string.upper()
+        return super().__new__(cls, string)
+
+cs = Capstr("fish")
+cs
+'FISH'
+cs.lower()
+'fish'
+cs.capitalize()
+'Fish'
+
+class C:
+    def __init__(self):
+        print("i am coming")
+    def __del__(self):
+        print("i am back number")
+
+
+class D:
+    def __init__(self, name):
+        self.name = name
+    def __del__(self):
+        globa x
+        x = self
+class E:
+    def __init__(self, name, func):
+        self.name = name
+        self.func = func
+    def __del__(self):
+        self.func(self)
+
+
+def outter():
+    x = 0
+    def inner(y=None):
+        nonlocal x
+        if y:
+            x = y
+        else:
+            return x
+    return inner
+
+f.outter()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
