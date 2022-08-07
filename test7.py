@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-28 19:55:34
-# @Last Modified time: 2022-07-29 15:03:39
+# @Last Modified time: 2022-08-07 17:57:29
 
 
 rhyme = (1,2,3,4,'you are beautiful')
@@ -37,7 +37,7 @@ rhyme[-1]
 (each * 2 for each in s)
 
 
-x = (520）
+x = (jiji520）
 type(x)
 
 

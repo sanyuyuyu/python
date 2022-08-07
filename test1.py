@@ -2,10 +2,14 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-08-06 17:33:55
+# @Last Modified time: 2022-08-07 18:05:49
 
 print('hello world')
 print('200+300=',200+300)
+a = 200 + 300 
+print()
+
+
 
 # name = input('Please enter your name:')
 # print('hello,', name)
@@ -1178,6 +1182,9 @@ f.outter()
 
 
 
+class S(str):
+    def __add__(self, other):
+        return len(self) + len(other)
 
 
 
