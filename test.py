@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-07 17:57:35
-# @Last Modified time: 2022-08-07 19:01:40
+# @Last Modified time: 2022-08-08 16:01:26
 a = 200 + 300
 print('200 + 300=',' ',a)
 print('200 + 300=', a, a, a)
@@ -26,8 +26,6 @@ if __name__=="__main__":
     c = a + b
     print(c)
     print(type(c))
-
-
 
 
 
