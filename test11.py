@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-08 15:57:56
-# @Last Modified time: 2022-08-08 20:35:30
+# @Last Modified time: 2022-08-09 15:44:14
 print(f"wolf wolf")
 beautiful = 200
 print("{0}".format(beautiful))
