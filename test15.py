@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-12 13:45:28
-# @Last Modified time: 2022-08-12 20:13:55
+# @Last Modified time: 2022-08-12 20:20:14
 name=input('请输入你的名字: ')
 
 print('欢迎你',name)
@@ -95,6 +95,47 @@ peach=1
 for i in range(9):
     peach=(peach+1)*2
 print(peach)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
