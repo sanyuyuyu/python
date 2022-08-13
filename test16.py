@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-13 11:36:42
-# @Last Modified time: 2022-08-13 19:12:36
+# @Last Modified time: 2022-08-13 19:52:21
 PI = 3.14159265453
 r = float(input('请输入您所求圆的半径：'))
 def area_of_circle(r):
@@ -58,6 +58,94 @@ a = int(A) or float(A)
 b = int(B) or float(B)
 c = int(C) or float(C)
 print( a , 'x^2 +' , b , 'x +' , c , '= 0 的解为' , quadratic( a , b , c ))
+
+
+
+
+def power(x):
+    return x * x
+
+def power(x, n):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+def enroll(name, gender):
+    print('name:',name)
+    print('gender:',gender)
+
+def add_end(L=[]):
+    L.append('END')
+    return L
+
+
+
+def add_end(L=None):
+    if L is None:
+        L = []
+    L.append('END')
+    return L
+
+
+def calc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+
+
+def mul(*num):
+    if len(num):
+        sum = 1
+        for n in num:
+            if isinstance(n, (int, float)):
+                sum *= n
+            else:
+                raise TypeError('bad operand type')
+        return sum
+    else:
+        raise TypeError('no paramerter is input')
+
+
+def fact(n):
+    if n == 1:
+        return 1
+    return n * fact(n - 1)
+
+
+
+def fact(n):
+    return fact_iter(n, 1)
+
+def fact_iter(num, product):
+    if num == 1:
+        return product
+    return fact_iter(num - 1, num * product)
+
+
+
+def move(n, a, b, c):
+    if n == 1:
+        print(a, '-->', c)
+    else:
+        move(n-1, a, c, b)
+        print(a, '-->', c)
+        move(n-1, b, a, c)
+move (3, 'A', 'B', 'C')
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
