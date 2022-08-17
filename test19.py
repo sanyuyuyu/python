@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-16 17:42:29
-# @Last Modified time: 2022-08-16 19:48:20
+# @Last Modified time: 2022-08-17 17:36:19
 DIGITS = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4,
 
           '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
@@ -140,8 +140,7 @@ def count():
     for i in range(1, 4):
 
         fs.append(f(i)) 
-         ?
-                                                                                 
+
     return fs
 
 
