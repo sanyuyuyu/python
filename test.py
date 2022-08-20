@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-07 17:57:35
-# @Last Modified time: 2022-08-20 20:30:35
+# @Last Modified time: 2022-08-20 22:15:10
 
 
 file_object = open("test.txt",'r') #创建一个文件对象，也是一个可迭代对象
@@ -34,7 +34,7 @@ content = "lisa,mike,"
 open("test.txt",'w').write(content)
 
 
-with open("test.txt","a") as file:
+with open("/Users/alpha/wss/python/test.txt","a") as file:
     file.write("lisi,")
 
 file_object = open("test.txt","a+")
