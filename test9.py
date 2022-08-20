@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-30 21:00:01
-# @Last Modified time: 2022-08-19 21:41:03
+# @Last Modified time: 2022-08-20 18:02:29
 
 def f(a:int,b:int):
     return a ** b
@@ -67,6 +67,90 @@ class Animal:
         self.leg = leg
     def say(self):
         print("wolf wolf")
+
+
+
+
+
+
+file_object = open("test.py",'r')
+
+try:
+
+    all_the_test = file_object.resd()
+
+    print(type(all_the_test))
+
+    print("all_the_test",all_the_test)
+
+finally:
+
+    file_object.colse
+
+
+
+file_object = open("test.py",'r')
+
+try:
+
+    while True:
+
+        line = file_object1.readline()
+
+        if line:
+
+            print("line=",line)
+
+        else:
+
+            break
+
+finally:
+
+    file_object1.close()
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
