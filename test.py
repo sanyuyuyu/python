@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-07 17:57:35
-# @Last Modified time: 2022-08-20 22:15:10
+# @Last Modified time: 2022-08-21 21:12:59
 
 
 file_object = open("test.txt",'r') #创建一个文件对象，也是一个可迭代对象
@@ -66,7 +66,11 @@ with open("test.txt",'a') as out:
 
 
 
-
+import pandas
+import numpy as np 
+#将test.txt文件中的内容写入data.txt文件
+with open('data.txt','ab') as f:
+    f.write(open('test.txt','rb').read())
 
 
 
