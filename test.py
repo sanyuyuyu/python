@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-07 17:57:35
-# @Last Modified time: 2022-08-22 21:31:12
+# @Last Modified time: 2022-08-22 21:45:05
 
 
 file_object = open("test.txt",'r') #创建一个文件对象，也是一个可迭代对象

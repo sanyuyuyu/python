@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-12 13:45:28
-# @Last Modified time: 2022-08-22 21:26:30
+# @Last Modified time: 2022-08-22 21:45:12
 
 #读取数字与变量类型
 num = int(input())
@@ -22,7 +22,7 @@ with open("./test.txt") as file_object:
     content = file_object.read()
     print(content)
 
-
+write
 
 
 
