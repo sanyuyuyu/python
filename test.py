@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-07 17:57:35
-# @Last Modified time: 2022-08-22 21:45:05
+# @Last Modified time: 2022-08-23 21:51:32
 
 
 file_object = open("test.txt",'r') #创建一个文件对象，也是一个可迭代对象
@@ -88,9 +88,9 @@ with open(file_name) as file_object:
 
 
 
-
-
-
+#附加文件
+with open("text.txt", 'a') as file_object:
+    file_object.write("this is add content\n")
 
 
 
