@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Date:   2022-07-23 22:08:30
-# @Last Modified time: 2022-08-07 18:05:49
+# @Last Modified time: 2022-08-25 21:50:12
 
 print('hello world')
 print('200+300=',200+300)
@@ -939,7 +939,7 @@ class C(B1, B2):
        super().__init__()
         print("c")
 
-C.mro
+
 
 
 
