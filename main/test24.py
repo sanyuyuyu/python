@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-26 20:43:01
-# @Last Modified time: 2022-08-26 22:58:08
+# @Last Modified time: 2022-08-27 21:26:37
 my_list = [1,2,3]
 new_list = []
 for i in my_list:
@@ -69,6 +69,152 @@ print(my_tuple) #生成器对象
 
 my_set = {value for value in 'hello albb'}
 print(my_set) #无序不重复
+
+
+
+
+
+def even_num(num):
+    return True if num % 2 == 0 else False
+
+li = [1,2,4,5,6,7]
+ret = [i for i in  li if i % 2 == 0]
+ret = [i if i % 2 == 0 else None for i in li]
+print(ret)
+
+
+def max(a, b):
+    if a > b:
+        ret = a
+    else:
+        ret = b
+    return ret
+
+r = max(3, 4)
+print(r)
+
+
+max = lambda a, b: a if a > b else b
+r = max(3,4)
+print(r)
+
+
+num = 22
+ret = "xiaoyu20" if num < 20 else ("jishu" if num % 2 == 1 else "oshu")
+print(ret)
+
+
+#元组
+age = 18
+
+#(当后面的表达式为假时返回，当后面的表达式为真时返回)[条件表达式]
+cn = ("old", "young")[age >= 18]
+print(cn)
+
+#字典
+age = 18 
+cn = {False:"old", True:"young"}[age >= 18]
+print(cn)
+
+
+
+
+if __name__ == '__main__':
+    pi = [3, 14, 15, 9, 26, 5, 35, 8, 97, 932]
+    even_count = 0
+ 
+    for i in pi:
+        even_count += 2 if i % 4 == 0 else 1 if i % 2 == 0 else 0
+    assert even_count == 6
+
+
+if __name__ == '__main__':
+    pi = [3, 14, 15, 9, 26, 5, 35, 8, 97, 932]
+    even_count = 0
+    for i in pi:
+        even_count += 1 if i % 2 == 0 else 0
+    assert even_count == 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
