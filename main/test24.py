@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-26 20:43:01
-# @Last Modified time: 2022-08-27 21:26:37
+# @Last Modified time: 2022-08-28 22:00:17
 my_list = [1,2,3]
 new_list = []
 for i in my_list:
@@ -136,6 +136,7 @@ if __name__ == '__main__':
     assert even_count == 4
 
 
+#断言：assert
 
 
 
@@ -143,16 +144,16 @@ if __name__ == '__main__':
 
 
 
+class Animal:
+    def __enter__(self):
+        print("__enter__()")
+
+    def __exit__(self, type, value, trace):
+        print("__exit__()")
 
 
-
-
-
-
-
-
-
-
+with Animal() as animal:
+    pass
 
 
 
