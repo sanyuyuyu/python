@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-26 20:43:01
-# @Last Modified time: 2022-08-28 22:00:17
+# @Last Modified time: 2022-08-29 22:09:55
 my_list = [1,2,3]
 new_list = []
 for i in my_list:
@@ -156,6 +156,41 @@ with Animal() as animal:
     pass
 
 
+
+
+
+import re
+ 
+def naive_calc(code):
+    code_lines = [l for l in code.split('\n') if l.strip() != '']
+    for line in code_lines:
+        ret = re.match("\s*(\d+)([\+\-\*\/])(\d+)\s*", line)
+        left = ret.group(1)
+        op = ret.group(2)
+        right = ret.group(3)
+        if op == '+':
+            print('{}+{}={}'.format(left, right, int(left)+int(right)))
+        elif op == '-':
+            print('{}-{}={}'.format(left, right, int(left)-int(right)))
+        elif op == '*':
+            print('{}*{}={}'.format(left, right, int(left)*int(right)))
+        elif op == '/' and right != '0':
+            print('{}/{}={}'.format(left, right, int(left)/int(right)))
+ 
+ 
+def test():
+    code = '''
+    1+2
+    3+4
+    5-3
+    4*3
+    10/2
+    '''
+    naive_calc(code)
+ 
+ 
+if __name__ == '__main__':
+    test()
 
 
 
