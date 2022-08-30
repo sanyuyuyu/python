@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-26 20:43:01
-# @Last Modified time: 2022-08-29 22:09:55
+# @Last Modified time: 2022-08-30 22:10:17
 my_list = [1,2,3]
 new_list = []
 for i in my_list:
@@ -194,6 +194,28 @@ if __name__ == '__main__':
 
 
 
+my_str = "absdufro"
+new_my_str = my_str.title()  #字标索引值
+print(new_my_str)
+#title 字母开头大写
+#lower转小写
+#strip 去除左右两端空格
+#upper转大写
+
+# my_str.count(sub_str[, start[, end]])
+
+print("abcdesfsw".count('a'))
+
+# my_str.replace(old, new[, count])  old替换为new新字符串
+
+my_str = "i am beautiful"
+my_str.split(sep=None, maxsplit=3)
+print(my_str)
+
+
+my_str = 'is it ok ?'
+answer_str = "is it ok ?: {}".format("yes.")
+print(answer_str)
 
 
 

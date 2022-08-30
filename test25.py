@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-30 21:09:00
-# @Last Modified time: 2022-08-30 22:03:46
+# @Last Modified time: 2022-08-30 22:10:11
 my_str = "absdufro"
 new_my_str = my_str.title()  #字标索引值
 print(new_my_str)
