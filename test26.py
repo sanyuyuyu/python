@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-31 16:34:42
-# @Last Modified time: 2022-08-31 21:48:32
+# @Last Modified time: 2022-09-01 18:50:38
 
 
 #lambda [参数列表]:表达式
@@ -53,14 +53,15 @@ def list_to_dict(list,key_func):
     return d
 
 
-if __name__ = '__main__':
-    list = []
 
 
 
 
 
-
+for i in range(1,10):
+    for j in range(1,i+1):
+        print('%d*%d=%2ld '%(i,j,i*j),end='')
+    print()
 
 
 
