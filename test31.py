@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-09-06 19:42:23
-# @Last Modified time: 2022-09-06 21:57:18
+# @Last Modified time: 2022-09-08 21:10:48
 from datetime import datetime, timedelta
 if __name__ == '__main__':
     today = datetime.now()
@@ -57,7 +57,6 @@ if __name__ == '__main__':
         date(2008, 1, 1),
         date.today(),
         lambda d: print(d)
-
 
 
 

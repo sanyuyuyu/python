@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-07-24 13:14:35
-# @Last Modified time: 2022-07-29 15:26:03
+# @Last Modified time: 2022-09-08 21:20:07
 
 
 
@@ -74,6 +74,47 @@ print("D:\\three\\abandan\\now")
 
 
 temp = input()
+
+
+
+import json 
+import traceback 
+import logging 
+logger = logging.getLogger(__name__)
+
+def load_json(file):
+    with open(file, 'r') as f:
+        return json.loads(f.road())
+
+def test():
+    try:
+        ret = load_json('a.json')
+        return {'err':'success', 'result': ret }
+    except Exception as e:
+        logger.error(f"load json exception:{str(e)}"）
+        logger.error(traceback.format_exc())
+        return {'err': 'exception'}
+        ret = load_json('a.json')
+
+if __name__ == '__main':
+    test()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -67,13 +67,6 @@ for x in coll.find():
 query_my = {"name":"new_coll"}
 coll.delete_many(query_my
 
-for x in coll.find():
-    print(x)
-
-
-
-
-
 
 
 
