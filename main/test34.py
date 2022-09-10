@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-09-08 13:42:17
-# @Last Modified time: 2022-09-09 22:29:38
+# @Last Modified time: 2022-09-10 21:51:52
 import os 
  
 
@@ -72,7 +72,7 @@ def count_file(file):
 import os
 import shutil
 import logging 
-from progress.bar import IncrementalBar 
+
 logger = logging.getLogger(__name__)
 
 
@@ -105,8 +105,142 @@ def zip_with_progress(dir_path, zip_file):
         if bar is not None:
             bar.finish()
 if __name__ == '__main__':
-    zip_with_progress('./', '/tmp/test_file_zip.zip')
     print()
+
+
+
+
+from enum import Enum
+
+class ErrorCode(Enum):
+    SUCCESS = 0
+    FAILED = 1
+    NOT_FOUND = 2
+    ALREADY_EXIST = 3
+    INVALID_PARAMETERS = 4
+
+    @staticmethod
+    def internal_ret_2_http(ret):
+        ret['err'] = ret['err'].name.lower()
+      
+
+if __name__ == '__main__':
+    ret = {'err': ErrorCode.NOT_FOUND}
+    ErrorCode.internal_ret_2_http(ret)
+    assert ret['err'] == 'not_found'
+
+
+import logging
+from error_code import ErrorCode
+from sqlite_connector import SqliteConnector
+logger = logging.Logger(__name__)
+
+class SqliteConnection(SqliteConnector):
+    def __init__(self, db_file) -> None:
+        super().__init__(db_file)
+
+    def execute(self, sql, arg=None):
+        
+
+if __name__ == '__main__':
+    kv = SqliteConnection("/tmp/test.db")
+
+    ret = kv.open()
+    assert ret['err'] == ErrorCode.SUCCESS
+
+    sql = '''create table if not exists key_value (
+        _key varchar(32) primary key not null,
+        value text not null
+    );'''
+    ret = kv.execute(sql)
+    assert ret['err'] == ErrorCode.SUCCESS
+    ret = kv.close()
+    assert ret['err'] == ErrorCode.SUCCESS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
