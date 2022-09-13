@@ -1,11 +1,7 @@
-# /usr/bin/python3
+#! /usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Author: sanyuyuyu
-# @Date:   2022-09-12 20:28:32
-# @Last Modified by:   sanyuyuyu
-# @Last Modified time: 2022-09-13 17:29:25
-
-
+# @Date:   2022-09-13 16:10:39
+# @Last Modified time: 2022-09-13 18:58:19
 def test_git_push():
     """测试push提交."""
     ...
@@ -31,16 +27,11 @@ def get_data_from_file1(path: str) -> str:
 
     data = ''
     
-    with open(path, 'r') as file:      
+    with open(path, 'r') as file:
         for line in file.readlines():
-            
-           if int(line.replace(".","")) % 2 == 0:
-            data += line
-            print(data)
-
-              
-          
-
+            if '111' in line:
+                data += line 
+                print(data)
 
     return data       
           
@@ -61,8 +52,10 @@ def get_data_from_file1(path: str) -> str:
     
 
 
-data = get_data_from_file1('data.txt')
+
 print(data)
+
+
 
 
 
