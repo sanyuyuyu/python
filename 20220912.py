@@ -3,7 +3,11 @@
 # @Author: sanyuyuyu
 # @Date:   2022-09-12 20:28:32
 # @Last Modified by:   sanyuyuyu
+<<<<<<< HEAD
 # @Last Modified time: 2022-09-13 17:29:25
+=======
+# @Last Modified time: 2022-09-12 22:32:23
+>>>>>>> b42006ea7d5c4d11d9d81cc937ddca73cee14569
 
 
 def test_git_push():
@@ -65,8 +69,32 @@ data = get_data_from_file1('data.txt')
 print(data)
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+a = ['a','b','c']
+
+
+def get_abc(a):
+    ...
+    # 定义一个字符串
+    data = ''
+    # 遍历传进来的数组
+    for _ in a:
+        # 字符串相加
+        data += _
+    # 返回最终的数据
+    return data
+
+
+def get_abc1(a):
+    return ''.join(a)
+
+
+print(get_abc(a))
+print(get_abc1(a))
+>>>>>>> b42006ea7d5c4d11d9d81cc937ddca73cee14569
 
