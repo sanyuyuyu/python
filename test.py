@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-08-07 17:57:35
-# @Last Modified time: 2022-09-13 15:48:55
+# @Last Modified time: 2022-09-14 19:47:42
 
 
 file_object = open("test.txt",'r') #创建一个文件对象，也是一个可迭代对象
@@ -75,7 +75,6 @@ with open('data.txt','ab') as f:
 
 with open("./data.txt") as file_object:
     content = file_object.read() #file_object.read() 用于读取文件内容，以str形式储存在变量content里
-    if 111 in content:
     print(content)
 
 
