@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date:   2022-09-15 19:16:49
-# @Last Modified time: 2022-09-15 22:44:20
+# @Last Modified time: 2022-09-16 18:46:54
 import json
  
 file_path = 'test.txt'
@@ -37,24 +37,6 @@ print(os.path.splitext(a[-1]))
 
 
 import os
-
-path = r"C:/Users/alpha/wss/python/test.txt"
-os.chdir(path)  # 修改工作路径
-files = os.listdir(path)
-
-print('原始文件名：'+str(files))  # 打印上面目录中有哪些文件
-
-# 使用os.path.splitext分离文件名和后缀
-for filename in files:
-    fa = os.path.splitext(filename)
-    if fa[1] == ".png":
-        newname = fa[0] + ".jpg"
-        os.rename(filename, newname)
-
-files = os.listdir(path)
-print('现在文件名：'+str(files))  # 打印看一下上面目录中有哪些文件
-
-
 
 
 
