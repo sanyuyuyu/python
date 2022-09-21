@@ -14,3 +14,6 @@ class Solution:
         for i in range(2, n + 1):
             nums[i] = nums[i // 2] + i % 2 * nums[i // 2 + 1]
         return max[nums]
+
+def even_num(num):
+    return Ture if num % 2 == 0 else False
