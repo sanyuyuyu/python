@@ -17,3 +17,8 @@ class Solution:
 
 def even_num(num):
     return Ture if num % 2 == 0 else False
+
+
+max = lambda a, b: a if a > b else b 
+r = max(10, 15)
+print(r)
