@@ -21,4 +21,3 @@ def even_num(num):
 
 max = lambda a, b: a if a > b else b 
 r = max(10, 15)
-print(r)
