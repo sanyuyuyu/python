@@ -32,8 +32,7 @@ f.close()
 
 
 
-with open("/Users/alpha/wss/python/test.txt","a") as file:
-    file.write("lisi,")
+
 
 file_object = open("test.txt","a+")
 content = file_object.read()
