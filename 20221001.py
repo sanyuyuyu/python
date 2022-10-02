@@ -14,9 +14,18 @@ c[2:6]
 results = {
     'even':0,
     'odd':0
-}
+    }
 a = 'aaa.txt'
 with open(a, 'r') as file:
     for line in file:
         print(line)
-       
+        b = line.split(',')
+        print(b)
+        for _ in b:
+            print(_)
+            if int(_) % 2 == 0:
+                results['even'] += 1
+            else:
+                results['odd'] += 1
+                
+print(results)
