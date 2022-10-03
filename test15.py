@@ -19,11 +19,6 @@ print(s) # Tom is a boy
 
 #读取文件
 with open("./test.txt") as file_object:
-    content = file_object.read()
-    print(content)
-
-#逐行读取
-file_name = 
 
 
 

@@ -38,7 +38,7 @@ list(zipped)
 [(1,4,'f'),(2,5,'i'),(3,6,'s')]
 import itertools
 zipped = itertools.zip_longest(x,y,z) 
-list zipped
+list(zipped)
 [(1,4,'f'),(2,5,'i'),(3,6,'s'),(none,none,'h')]
 
 

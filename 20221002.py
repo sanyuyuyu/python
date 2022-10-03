@@ -22,4 +22,4 @@ with open(a, 'r') as file:
                 B.append(int(i))
 
 print(sum(A))
-print(sum(B))g
+print(sum(B))

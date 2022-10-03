@@ -20,7 +20,7 @@ def draw(num):
         draw(num-1)
 
         print(a.center(9,' '))
-        aa
+        
 draw(4)
 
 

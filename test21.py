@@ -4,7 +4,7 @@
 # @Last Modified time: 2022-08-18 21:30:44
 # article/models.py
 
-from fastapi import FastAPI
+from fastap import FastAPI
 
 app = FastAPI()
 
