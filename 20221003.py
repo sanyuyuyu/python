@@ -37,11 +37,9 @@ a = ('zhangsan', 16, 80)
 dict2 = {'name': 'zhangsna', 'age':18, 'height': 80}
 print(dict2)
 
-b = ('zhaoliuqi', 19, 84) n    
+b = ('zhaoliuqi', 19, 84) 
 dict3 = {'name': 'zhaoliuqi', 'age': 19, 'height': 84}
 print(dict3)
-
-
 
 
 
