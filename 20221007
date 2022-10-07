@@ -1,0 +1,4 @@
+with open(path) as file:
+    for line in file:
+        person = line.split(',')
+        print(person)
