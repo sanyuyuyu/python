@@ -145,13 +145,6 @@ print('chinese.\nausia')
 print("D:\\three\\abandan\\now")
 
 
-a = {"old":"older","young":"younger","slow":"slower"}
-b = dict(old="older",young="younger",slow="slower")
-c = dict([("old","older"),,("young","younger"),("slow","slower")])
-d = dict({"old":"older","young":"younger","slow":"slower"})
-e = dict({"old":"older","young":"younger"},slow="slower")
-f = dict(zip(["old","young","slow"],["older","younger","slower"]))
-a == b == c == d == e ==f
 
 
 d = dict.fromkeys("fish",250)
@@ -187,14 +180,6 @@ d = {x:y for x in [1,3,5] for y in [2,4,6]}
 {1:6,3:6,5:6}
 
 
-
- {'fish','tiger'}
-{s for s in 、'fish'}
-{'s','h','i','f'}
-set ('fish')
-{'s','h','i','f'}
-for each in s:
-    print(each)
 set ([1,1,3,4,5])
 {1,3,4,5 }
 s.union({1,2,3})
@@ -229,20 +214,14 @@ y = {4,5}
 x = frozenset(x)
 y = {x, 4, 5}
 y
-{frozenset({1,2,3})4,5}
 
 
 def myfunc():
     pass
 myfunc()
 
-def myfunc():
-    for in range(3):
-        print('i love python')
+
  
- def myfunc(name):
-    for i in range(3):
-        print(f'i love {name}')
 
 myfunc("name" )
 myfunc("name",5)
@@ -287,16 +266,6 @@ def myfunc(s,vt,o="dog"):
 def abs(a,/,b,c):
     print(a,b,c)
 
-
-def myfunc(*args):
-    print(“有{}个参数。”。formate(len(args)))
-    print("第二个参数是：{}".formate(args([1]))
-def myfunc(*args):
-    print(type(args))
-myfunc(1,2,3,a=4,b=5)
-def myfunc(**kwargs):
-    print("kwargs")
-myfunc(a=1,b=2,c=3)
 {'a':1,'b':2,'c':3}
 
 def myfunc(a,*b,**c):

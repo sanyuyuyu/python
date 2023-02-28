@@ -1,2 +1,2 @@
-{'name': '张三', 'age': 16, 'height': 80}
-{'name': '赵六七', 'age': 19, 'height': 84}
+I love fish.
+I love flower.
