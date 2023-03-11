@@ -42,3 +42,7 @@ while True:
 		print("可兑换的人民币为%.3f"%USD)
 	else:
 		print("输入有误")
+
+
+
+		
