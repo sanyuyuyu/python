@@ -13,7 +13,6 @@ file.write('hello')
 #open(file,mode = 'r',buffering = -1)
 
 file = open('text.txt')
-file.read(5)
-file.read(2)
-
-file.read()
+file.read(5) #读取5个字符
+file.read(2) #继续读取2个字符
+file.read()  #再次读取
