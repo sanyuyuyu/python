@@ -5,4 +5,4 @@ print(a.join('abcdefg'))
 print(a.strip('p'))
 print(a.count('n'))
 print(a.lower())
-print(a.upper())
+print(a.upper()4
