@@ -20,7 +20,9 @@ n = eval(input('请输入一个数字:'))
 print('{:+^11}'.format(chr(n-1)+chr(n)+chr(n+1)))
 
 import turtle
+
 for i in range(4):
+	
     turtle.fd(100)
     turtle.fd(-100)
     turtle.seth((i+1)*90)
