@@ -19,10 +19,23 @@ n = eval(input('请输入一个数字:'))
 
 print('{:+^11}'.format(chr(n-1)+chr(n)+chr(n+1)))
 
+
+
 import turtle
 
 for i in range(4):
-	
+
     turtle.fd(100)
     turtle.fd(-100)
     turtle.seth((i+1)*90)
+
+
+txt = input("请输入类型序列：")
+txtArr = txt.split(" ")
+d = {}
+for item in txtArr:
+    d[item] = d.get(item, 0) + 1
+ls = list(d.items())
+ls.sort(key=lambda item:item[1], reverse=True)
+for k in ls:
+    print("{}:{}".format(k[0], k[1]))
