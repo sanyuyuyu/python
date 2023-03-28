@@ -20,3 +20,4 @@ def fun(num):  #s  在函数内无定义。。。。。
         return 0
     return 5
 print(fun(2))
+
