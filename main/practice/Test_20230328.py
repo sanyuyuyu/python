@@ -35,7 +35,7 @@ while True:
 s = ['a','b','c','d','e','f']
 print(s[1:4:2
 
-'''
+
 file = open('text.txt','r')
 info = file.read()
 d = {}
@@ -50,7 +50,7 @@ ls.sort(key = lamba item:item[1], reverse = True)
 for i in range(10):
 	print('{}'.format(ls[i][0],end=''))
 
-'''
+
 
 
 
