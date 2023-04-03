@@ -1,5 +1,4 @@
 
-
 fi = open("aaa.txt","r",encoding="utf-8")
 fo = open("aaa.txt", "w", encoding="utf-8")
 flag = False
@@ -17,3 +16,6 @@ for line in fi:
         	fo.write(line+"\n")
 fo.close()
 fi.close()     
+
+
+
