@@ -22,3 +22,22 @@ while data:
     data = input()
 age = age / num;
 print("平均年龄{:.2f} 男性人数是{}".format(age, maleNum))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
