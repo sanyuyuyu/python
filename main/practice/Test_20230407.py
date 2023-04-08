@@ -14,21 +14,6 @@ file.close()
 print("{}:{}".format(arr[0][0],arr[0][1]))
 
 
-'''
-file = open('命运.txt','r',encoding = 'utf-8')
-info = file.read()
-d = {}
-for s in info:
-    if s not in ',，。？《》！【】“”‘’、':
-        d[s] = d.ger(s,0) + 1
-arr = list(d.items())
-arr.sort(key = lambda item:item[1],reverse = True)
-file.close()
-print('{}:{}'.format(arr[0][0],arr[0][1]))
-
-'''
-
-
 file = open("命运.txt", "r", encoding="utf-8")
 info = file.read()
 d = {}
@@ -40,3 +25,13 @@ ls = list(d.items())
 ls.sort(key=lambda item:item[1], reverse=True)
 for i in range(10):
     print("{}".format(ls[i][0]), end="")
+
+
+
+
+
+
+
+
+
+
