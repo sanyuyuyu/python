@@ -12,6 +12,9 @@ class Car():
 		long_time = '你的' + self.make + self.model + '到目前为止已经行驶了' + str(duration)\
 					+ '年' + '目前价值' + str(price) + '万'
 		return long_time
+
+
+
 class ElectricCar(Car):
 	def __init__(self,make,model,year):
 		super().__init__(self,make,model,year)
@@ -23,10 +26,11 @@ class ElectricCar(Car):
 		price = 30 - duration - (500/self.capacity_num)
 		long_time = '你的' + self.make + self.model + '到目前为止已经行驶了' + str(duration)\
 					+ '年' + '目前价值' + str(price) + '万'
+
 		return long_time
 
 
-'''	
+
 my_car = Car('sansan','aa',2023)
 my_car.mod_this_year(2030)
 my_car.this_year = 2030
@@ -36,4 +40,4 @@ print(result)
 your_car = Car('aa','dd',2022)
 result = my_car.detection()
 print(result)
-'''
+
