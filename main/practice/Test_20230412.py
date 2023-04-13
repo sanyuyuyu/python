@@ -67,7 +67,58 @@
 
 
 
-a,b,c = map(int, input().split())
+# a,b,c = map(int, input().split())
 
-ls = list(map(float,input().split()))
+# ls = list(map(float,input().split()))
+
+
+
+money = int(input())
+ 
+tax = 0
+ 
+if money <= 60000:
+    print(money)
+else:
+    a = money - 60000
+    if a <= 36000:        
+        tax = a * 0.03
+    elif a <= 144000:     
+        tax = 36000 * 0.03 + (a - 36000) * 0.1
+    elif a <= 300000:     
+        tax = 36000 * 0.03 + (144000 - 36000) * 0.1 + (a - 144000) * 0.2
+    else:                   
+        tax = 36000 * 0.03 + (144000 - 36000) * 0.1 + (300000 - 144000) * 0.2 + (a - 300000) * 0.25
+print(int(money - a))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
