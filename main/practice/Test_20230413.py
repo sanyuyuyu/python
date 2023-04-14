@@ -54,7 +54,7 @@ M , n = map(int,input().split())
 
 sum = 0
 
-for i in range(M,n-M):
+for i in range(M,n+1):
 	if (i % 4 == 0 and i % 100 != 0) or i % 400 == 0 :
 		sum += i
 
