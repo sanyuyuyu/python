@@ -30,7 +30,7 @@ res = math.sqrt(s / len(ls))
 
 print(f'{res:.3f}')
 
-ee = map(int,input.split())
+ee = list(map(float,input().split())
 
 # later = 0
 
