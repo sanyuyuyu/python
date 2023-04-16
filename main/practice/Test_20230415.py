@@ -28,15 +28,15 @@ else:
 	print('东门') 
 
 
-n = int(input())
+# n = int(input())
 
-for i in range(n):
-	ls = list(map(int,input().split())
-	l = len(ls)
-	mx = max(ls)
-	mn = min(ls)
-	avg = sum(ls) / len(ls)
-	print(l, mx, mn, f'{avg:.1f}')
+# for i in range(n):
+# 	ls = list(map(int,input().split())
+# 	l = len(ls)
+# 	mx = max(ls)
+# 	mn = min(ls)
+# 	avg = sum(ls) / len(ls)
+# 	print(l, mx, mn, f'{avg:.1f}')
 
 
 
