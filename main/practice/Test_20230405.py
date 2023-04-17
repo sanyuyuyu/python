@@ -6,20 +6,20 @@ sum2 = 0
 sum3 = 0
 sum4 = 0
 
-for i in ss:
+for i in range(len(ss)):
 	if 'A' in ss:
 		sum1 += i
 		print(sum1)
-	if 'B' in ss:
-		sum2 += i
-		print(sum2)
-	if 'C' in ss:
-		sum3 += i
-		print(sum3)
-	if 'D' in ss :
-		sum4 += i
-		print(sum4)
-#
+# 	if 'B' in ss:
+# 		sum2 += i
+# 		print(sum2)
+# 	if 'C' in ss:
+# 		sum3 += i
+# 		print(sum3)
+# 	if 'D' in ss :
+# 		sum4 += i
+# 		print(sum4)
+# #
 # answer = input().split()
 #
 # count_a = answer.count("A")

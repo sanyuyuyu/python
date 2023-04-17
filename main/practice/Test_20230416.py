@@ -79,7 +79,16 @@ for i in range(ss):
 
 
 
-
+answer = input().split()
+ 
+count_a = answer.count("A")
+print(f'A选项{count_a}个')
+count_b = answer.count("B")
+print(f'A选项{count_b}个')
+count_c = answer.count("C")
+print(f'A选项{count_c}个')
+count_d = answer.count("D")
+print(f'A选项{count_d}个')
 
 
 
