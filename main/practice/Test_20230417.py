@@ -20,3 +20,5 @@ for i in range(n):
 print(f'A{sum_a}')
 print(f'B{sum_b}')
 print(f'ALL{sum_a + sum_b}')
+
+
