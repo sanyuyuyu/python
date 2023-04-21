@@ -52,21 +52,21 @@
 
 # [1,2,3]
 
-# numbers = list(map(float,input().split()))
+numbers = list(map(float,input().split()))
 
-# avg = sum(numbers) / len(numbers)
+avg = sum(numbers) / len(numbers)
 
-# p = 0
+p = 0
 
-# for i in numbers:
-# 	# what should to do?
-# 	p += pow(i - avg, 2)
+for i in numbers:
+	# what should to do?
+	p += pow(i - avg, 2)
 
 
-# s  = p / len(numbers)
-# last = pow(s, 1/2)
+s  = p / len(numbers)
+last = pow(s, 1/2)
 
-# print(f'{last:.3f}')
+print(f'{last:.3f}')
 
 
 
