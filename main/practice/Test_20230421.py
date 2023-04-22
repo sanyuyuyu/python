@@ -288,29 +288,29 @@
 # score = input().split()     #默认空格分割成字符串元素的列表
 # score = [int(i) for i in score]    #将字符串元素列表转换成整数元素的列表，分数score
  
-# 第二种方式
-# map对象--->list对象，map对象可以用来做循环遍历，但是不能拿它里面每一个元素的值
-# 如果需要拿它里面的值可以强制类型转换为list，list对象    
-scores = list(map(int, input().split()))                #使用map映射函数
+# # 第二种方式
+# # map对象--->list对象，map对象可以用来做循环遍历，但是不能拿它里面每一个元素的值
+# # 如果需要拿它里面的值可以强制类型转换为list，list对象    
+# scores = list(map(int, input().split()))                #使用map映射函数
  
-indexes = list(map(int, input().split()))
+# indexes = list(map(int, input().split()))
  
-for index in indexes:
-    scores[index - 1] += 10
+# for index in indexes:
+#     scores[index - 1] += 10
  
-#找出总分最高的选手
-max_score = max(scores)      #找出了最高分
-# score.index(max_score)      #这种方法有一个弊端就是只能找到第一个最高分所在的下标，不符合题目要求
+# #找出总分最高的选手
+# max_score = max(scores)      #找出了最高分
+# # score.index(max_score)      #这种方法有一个弊端就是只能找到第一个最高分所在的下标，不符合题目要求
  
-# 第一种方式
-res1 = []
-res2 = []
-for index, score in enumerate(scores):
-    if score == max_score:
-        res2.append(str(index + 1))
-    res1.append(str(score))
-print(' '.join(res1))
-print(' '.join(res2))
+# # 第一种方式
+# res1 = []
+# res2 = []
+# for index, score in enumerate(scores):
+#     if score == max_score:
+#         res2.append(str(index + 1))
+#     res1.append(str(score))
+# print(' '.join(res1))
+# print(' '.join(res2))
  
  
 # 第二种方式
@@ -320,7 +320,94 @@ print(' '.join(res2))
 #        res.append(index + 1)
 #print(' '.join(res))
  
- 
+
+
+# 1,3,2,5
+# 1.3 -> 3
+# 3,2 -> 3
+# 4,5 -> 5  
+
+# 4
+
+# 1  3 4 5 6
+
+# b = a.sort()
+
+# n = list(map(int, input().split()))
+
+# n = [1,3,5,2,10,6]
+# # n1 = [1,3,5,2]
+# # n2 = [1,3,10,6]
+
+# n1 = [1,0,23,41,0]
+
+
+# def test(a):
+# 	s = []
+
+# 	for i in a:
+# 		if i % 2 == 0:
+# 			s.append(i)
+
+# 	return s
+
+
+# print(print(test(n)))
+
+
+
+
+# def count(a,b):
+# 	s = 0 # []
+
+# 	# step
+# 	s = a + b
+
+# 	return s
+
+
+# print(count(1,2))
+
+n = list(map(int, input().split()))
+s = sorted(n)
+
+# [1,2,3,4,...,100]
+# for i in n:
+# 	if s
+
+# [1,3,2,4,6,7,8,99]
+
+def cc(s):
+	length = len(s)
+	for i in range(2, length):
+		if s[i] == s[i-1] + 1 and s[i - 1] == s[i - 2] + 1:
+			print('Yes')
+			break
+	else:
+		print('NO')
+print(cc(s))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

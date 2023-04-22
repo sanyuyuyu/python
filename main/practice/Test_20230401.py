@@ -8,7 +8,7 @@ for i in range(4):
 for i in "Summer":
 	if i == 'm':
 		break
-	print(i,end='')
+	print(i,end='','\n')
 
 for num in range(1,4):
 	num *= num
