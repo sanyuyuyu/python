@@ -61,7 +61,7 @@ dd = d.copy() # 复制
 del(d['zs']) # 删除
 print(list(d.keys())) # 输出键值名
 print(list(d.values())) # 输出键值
-print(d.pop('ls')) # 随机弹出一个键值对
+print(d.pop('ls')) # 随机弹出一个键值对x
 print(d)
 print(dd)
 
