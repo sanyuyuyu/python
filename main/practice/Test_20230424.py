@@ -28,8 +28,7 @@ results = []
 
 for i in students:
 	if i['name'] = 'zs':
-		results.append(i)
-
+		results.append(i
 
 def search(name):
 	results = [item for item in students if item['name'] == name]

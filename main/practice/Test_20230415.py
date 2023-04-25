@@ -20,12 +20,6 @@ for i in range(n):
 		count += 1
 print(count)
 
-wei = input()
-
-if wei[0] == 'A' or wei[0] == 'B' or wei[0] == 'C':
-	print('西门')
-else:
-	print('东门') 
 
 
 # n = int(input())
@@ -37,7 +31,6 @@ else:
 # 	mn = min(ls)
 # 	avg = sum(ls) / len(ls)
 # 	print(l, mx, mn, f'{avg:.1f}')
-
 
 
 
