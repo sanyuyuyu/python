@@ -141,24 +141,26 @@
 
 '''
 
-class Fruit():
-	def __init__(self,fruit_type):
-		self.type = fruit_type
-		self.color = None
-		self.price = None
-	def Set_color(self,color):
-		self.color = color
-	def Set_price(self,price):
-		self.price = price
-	def __str__(self):
-		if self.color is None or self.price is None:
-			return '水果价格和颜色没有设置'
-		else:
-			return f'{self.type}:color--{self.color} price--{self.price}元'
-apple = Fruit('苹果')
-apple.Set_color('red')
-apple.Set_price(5)
-print(apple)
+# class Fruit():
+# 	def __init__(self,fruit_type):
+# 		self.type = fruit_type
+# 		self.color = None
+# 		self.price = None
+# 	def Set_color(self,color):
+# 		self.color = color
+# 	def Set_price(self,price):
+# 		self.price = price
+# 	def __str__(self):
+# 		if self.color is None or self.price is None:
+# 			return '水果价格和颜色没有设置'
+# 		else:
+# 			return f'{self.type}:color--{self.color} price--{self.price}元'
+# apple = Fruit('苹果')
+# apple.Set_color('red')
+# apple.Set_price(5)
+# print(apple)
+
+
 
 
 
