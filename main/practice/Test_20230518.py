@@ -18,9 +18,7 @@
 # def operate(x):
 # 	r = 1
 # 	for i in range(1,x + 1):
-# 		r *= i 
-# 	return r 
-# s = sum(mao(operate,L))
+# 		r *= i # s = sum(mao(operate,L))
 # print(f'1+2!+3+...+{num}!={get_num}')
 
 def fact(num):
