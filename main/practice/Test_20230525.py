@@ -14,24 +14,46 @@
 # 	return x * 10 + y 
 # print(reduce(fn,[1,3,5,7,9]))
 
-from functools import reduce
+# from functools import reduce
 
-DIGITS = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
+# DIGITS = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
 
-def str2int(s):
+# def str2int(s):
+#     def fn(x, y):
+#         return x * 10 + y
+#     def char2num(s):
+#         return DIGITS[s]
+#     return reduce(fn, map(char2num, s))
+
+
+# from functools import reduce
+
+# DIGITS = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
+
+# def char2num(s):
+#     return DIGITS[s]
+
+# def str2int(s):
+#     return reduce(lambda x, y: x * 10 + y, map(char2num, s))
+
+
+
+
+def str2float(s):
+
+    w = list(s)
+
     def fn(x, y):
+
         return x * 10 + y
-    def char2num(s):
-        return DIGITS[s]
-    return reduce(fn, map(char2num, s))
 
+    for i,value in enumerate(w):
 
-from functools import reduce
+        if value == '.':
 
-DIGITS = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
+            break
 
-def char2num(s):
-    return DIGITS[s]
+   # i =s.index('.')
 
-def str2int(s):
-    return reduce(lambda x, y: x * 10 + y, map(char2num, s))
+    return reduce(fn,  map(int, w[0: i])) + reduce(fn,  map(int, w[i+1:])) / 10 ** len(w[i+1:])
+
