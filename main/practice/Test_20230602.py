@@ -55,9 +55,12 @@ for i in range(row + 1):
 print("------------------------------")
  
  
-# 6.打印右三角形
-for i in range(1, 10):
-    if i >= 6:
-        print("* " * (10 - i))
-    else:
-        print("* " * i)
+# # 6.打印右三角形
+# for i in range(1, 10):
+#     if i >= 6:
+#         print("* " * (10 - i))
+#     else:
+#         print("* " * i)
+
+
+  
