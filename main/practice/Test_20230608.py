@@ -34,3 +34,5 @@ def f(n):
     return p
 def is_palindrome(n):
     return str(n)==f(n)
+
+    
