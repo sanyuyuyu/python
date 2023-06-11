@@ -16,7 +16,7 @@
 # last = "".join(total)
 # print(last)
 
-#
+
 # num = []
 # total = 0
 # for i in range(1,11):
@@ -31,7 +31,7 @@
 #     total += j
 # print(f'选手最终得分是：{total/len(num)}')
 
-#
+
 # player_info = {}
 # li = []
 # print('输入quit表示选手成绩录入完毕')
